@@ -18,3 +18,9 @@ ln -s ~/.dotfiles/config ~/.config
 
 rm -f ~/.tigrc
 ln -s ~/.dotfiles/tigrc ~/.tigrc
+
+rm -rf ~/.git_template
+ln -s ~/.dotfiles/git_template ~/.git_template
+
+rm -f ~/.gitconfig
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig

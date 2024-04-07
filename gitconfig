@@ -1,0 +1,5 @@
+[user]
+	name = Takashi Kato
+	email = tohosaku@users.osdn.me
+[init]
+	templatedir = ~/.git_template
