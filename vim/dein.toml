@@ -1,5 +1,5 @@
 [[plugins]]
-repo = 'baberthal/yajs.vim'
+repo = 'yuezk/vim-js'
 
 [[plugins]]
 repo = 'lambdalisue/fern.vim'
