@@ -103,7 +103,7 @@ nnoremap <C-n> :Fern . -reveal=% -drawer -toggle -width=40<CR>
 let g:fern#default_hidden=1
 
 " 表示しないファイル
-let g:fern#default_exclude = '^\%(\.git\)$'
+let g:fern#default_exclude = '^\%(\.git\|.*\.swp\)$'
 
 "" fzn.vim
 " Ctrl+pでファイル検索を開く
