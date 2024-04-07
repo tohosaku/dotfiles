@@ -99,7 +99,13 @@ nnoremap <Leader>a :echo "Hello"<CR>
 " Ctrl+nでファイルツリーを表示/非表示する
 nnoremap <C-n> :Fern . -reveal=% -drawer -toggle -width=40<CR>
 
-"" fzf.vim
+" 隠しフォルダ表示
+let g:fern#default_hidden=1
+
+" 表示しないファイル
+let g:fern#default_exclude = '^\%(\.git\)$'
+
+"" fzn.vim
 " Ctrl+pでファイル検索を開く
 " git管理されていれば:GFiles、そうでなければ:Filesを実行する
 fun! FzfOmniFiles()
