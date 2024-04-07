@@ -13,8 +13,5 @@ ln -s ~/.dotfiles/gitmux.conf ~/.gitmux.conf
 rm -rf ~/.vim
 ln -s ~/.dotfiles/vim ~/.vim
 
-rm -rf ~/.config
-ln -s ~/.dotfiles/config ~/.config
-
 rm -f ~/.tigrc
 ln -s ~/.dotfiles/tigrc ~/.tigrc
