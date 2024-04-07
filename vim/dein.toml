@@ -22,3 +22,15 @@ depends = 'fzf'
 
 [[plugins]]
 repo = 'iberianpig/tig-explorer.vim'
+
+[[plugins]]
+repo = 'tpope/vim-dispatch'
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+[[plugins]]
+repo = 'tpope/vim-bundler'
+
+[[plugins]]
+repo = 'vim-test/vim-test'
