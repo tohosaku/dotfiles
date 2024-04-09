@@ -21,3 +21,6 @@ ln -s ~/.dotfiles/git_template ~/.git_template
 
 rm -f ~/.gitconfig
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+
+rm -rf ~/.bundle
+ln -s ~/.dotfiles/bundle ~/.bundle
