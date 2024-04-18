@@ -28,3 +28,38 @@ bind diff    I      ?git rebase -i %(branch)
 bind refs    I      ?git rebase -i %(branch)
 bind main    <Esc>i ?git rebase -i %(commit)
 bind diff    <Esc>i ?git rebase -i %(commit)
+
+# n / p を上下移動に割り当て (default: find-next / view-pager)
+bind generic n      move-down
+bind generic p      move-up
+
+# n / p で単位ごとの移動
+bind diff    n      :/^@@
+bind diff    p      :?^@@
+bind diff    <Esc>n :/^diff --(git|cc)
+bind diff    <Esc>p :?^diff --(git|cc)
+bind stage   n      :/^@@
+bind stage   p      :?^@@
+bind stage   <Esc>n :/^diff --(git|cc)
+bind stage   <Esc>p :?^diff --(git|cc)
+bind pager   n      :/^@@
+bind pager   p      :?^@@
+bind pager   <Esc>n :/^diff --(git|cc)
+bind pager   <Esc>p :?^diff --(git|cc)
+bind log     n      :/^commit
+bind log     p      :?^commit
+
+# 先頭行へ移動
+bind generic g  none
+bind generic gg move-first-line
+bind generic E      view-grep
+
+# G でファイル末尾に移動 (default: :toggle commit-title-graph)
+bind generic G      move-last-line
+bind main    G      move-last-line
+
+# Alt-g で :toggle commit-title-graph
+bind main    <Esc>g :toggle commit-title-graph
+
+# ` で commit ID をクリップボードにコピー (Mac用)
+bind generic `      @bash -c "echo -n '%(commit)' | tmux load-buffer -"
