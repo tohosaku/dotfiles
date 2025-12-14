@@ -120,7 +120,3 @@ if ! shopt -oq posix; then
 fi
 
 stty stop undef
-
-export GEM_HOME=~/.ruby/
-export PATH="$PATH:~/.ruby/bin:~/bin"
-
