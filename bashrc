@@ -120,3 +120,5 @@ if ! shopt -oq posix; then
 fi
 
 stty stop undef
+
+export JJ_EDITOR=vi

@@ -188,7 +188,7 @@ nnoremap ]Q :<C-u>clast<CR>
 " ripgrep
 """"""""""
 if executable('rg')
-    let &grepprg = 'rg --vimgrep --hidden'
+    let &grepprg = 'rg --vimgrep --hidden -g "!.git/"'
     set grepformat=%f:%l:%c:%m
 endif
 
