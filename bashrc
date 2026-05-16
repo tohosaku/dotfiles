@@ -121,4 +121,6 @@ fi
 
 stty stop undef
 
-export JJ_EDITOR=vi
+alias vi=nvim
+export EDITOR=nvim
+export JJ_EDITOR=nvim

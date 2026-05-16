@@ -1,0 +1,11 @@
+{
+  "fern.vim": { "branch": "main", "commit": "b4520a50d8df51969838d35eb07f797e2785b234" },
+  "fzf.vim": { "branch": "master", "commit": "b9624aa012ddcbae9e79964bfd30cc1fbe3cf263" },
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "tig-explorer.vim": { "branch": "master", "commit": "c134fa56ad46a5ff78fcb87c8e10c8cf8ec85b0c" },
+  "vim-bundler": { "branch": "master", "commit": "64a448589e5e238cce0030d08984368ddc3851ac" },
+  "vim-dispatch": { "branch": "master", "commit": "a2ff28abdb2d89725192db5b8562977d392a4d3f" },
+  "vim-js": { "branch": "master", "commit": "f38483322d84eb87ebfe08dcb23da538ab3454cc" },
+  "vim-rails": { "branch": "master", "commit": "b0a5c76f86ea214ade36ab0b811e730c3f0add67" },
+  "vim-test": { "branch": "master", "commit": "7062b50979a28e804081f0e82b7321184ec1c20b" }
+}
