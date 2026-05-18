@@ -1,0 +1,12 @@
+[colors]
+author = "green"
+timestamp = "blue"
+"diff removed token" = { underline = false }
+"diff added token" = { underline = false }
+
+[template-aliases]
+# Username part of the email address
+'format_short_signature(signature)' = 'signature.email().local()'
+
+[templates]
+log = "builtin_log_oneline"
