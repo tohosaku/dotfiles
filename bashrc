@@ -124,3 +124,5 @@ stty stop undef
 alias vi=nvim
 export EDITOR=nvim
 export JJ_EDITOR=nvim
+
+export PATH="${PATH}:~/.ruby/bin:~/.local/bin"
