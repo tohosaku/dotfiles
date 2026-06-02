@@ -121,6 +121,6 @@ fi
 
 stty stop undef
 
-for RC_FILE in $(\ls ~/.bash_rc.d/*.sh 2>/dev/null); do
+for RC_FILE in $(\ls ~/.bashrc.d/*.sh 2>/dev/null); do
   source "${RC_FILE}"
 done
