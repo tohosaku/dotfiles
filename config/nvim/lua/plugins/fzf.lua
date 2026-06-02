@@ -2,7 +2,7 @@ return {
   "junegunn/fzf.vim",
   dependencies = {
     "junegunn/fzf"
-  }
+  },
   config = function()
     ---- fzn.vim
     -- Ctrl+pでファイル検索を開く
