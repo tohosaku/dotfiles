@@ -121,8 +121,6 @@ fi
 
 stty stop undef
 
-alias vi=nvim
-export EDITOR=nvim
-export JJ_EDITOR=nvim
-
-export PATH="${PATH}:~/.ruby/bin:~/.local/bin"
+for RC_FILE in $(\ls ~/.bash_rc.d/*.sh 2>/dev/null); do
+  source "${RC_FILE}"
+done
