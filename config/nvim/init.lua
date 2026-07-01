@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd('ColorScheme', {
   pattern = '*',
   callback = function()
     vim.api.nvim_set_hl(0, 'lineNr', { ctermfg = 8 })
-    vim.api.nvim_set_hl(0, 'NonText', { ctermbg = 'None' })
+    vim.api.nvim_set_hl(0, 'NonText', { ctermbg = 'None', ctermfg = 8 })
   end
   })
 vim.cmd.colorscheme('desert')
