@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd('ColorScheme', {
   pattern = '*',
   callback = function()
     vim.api.nvim_set_hl(0, 'lineNr', { ctermfg = 8 })
-    vim.api.nvim_set_hl(0, 'NonText', { ctermbg = 'None' })
+    vim.api.nvim_set_hl(0, 'NonText', { ctermbg = 'None', ctermfg = 8 })
   end
   })
 vim.cmd.colorscheme('desert')
@@ -88,5 +88,16 @@ vim.opt.statusline = '%F%m%r%h%w [POS=%04l,%04v] [%p%%] [LEN=%L]'
 
 " execute "set statusline +=" . gitBranch
 ]]--
+vim.g.clipboard = {
+  name = 'OSC 52',
+  copy = {
+    ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
+    ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
+  },
+  paste = {
+    ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
+    ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+  },
+}
 
 require('config.lazy')
