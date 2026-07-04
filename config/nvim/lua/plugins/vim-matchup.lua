@@ -3,6 +3,7 @@ return {
   init = function()
     -- modify your configuration vars here
     vim.g.matchup_treesitter_stopline = 500
+    vim.api.nvim_set_hl(0, "MatchWord", {ctermbg=240})
 
     -- or call the setup function provided as a helper. It defines the
     -- configuration vars for you
